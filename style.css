@@ -1,0 +1,97 @@
+/*
+Theme Name: We Make Indie (Games) [2018]
+Theme URI: https://www.wemakeindie.games
+Author: Jeremy Alexander
+Author URI: https://www.jerementor.com
+Description: The 2018 theme for game site (we make indie games)
+Version: 1.0
+Text Domain: jerementor
+Tags: epic blog
+*/
+
+/*edd login*/
+input#edd_login_submit {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #c8d0f9;
+    background-color: rgba(87, 117, 235, .03);
+    -webkit-transition: background-color 200ms ease;
+    transition: background-color 200ms ease;
+    color: #0071a7;
+    font-size: 14px;
+    font-weight: 400;    
+}
+
+input#edd_login_submit:hover{
+    background-color: rgba(87, 117, 235, .08);
+}
+
+.edd-submit.button.blue{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #0075ad;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, .03);
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+  color: #0071a7;
+  font-size: 17px;
+  text-align: center;  
+}
+
+.edd-submit.button.blue:hover {
+  border-color: #fff;
+  background-color: #003c58;
+  color: #fff;
+}
+
+.edd-input {
+    background: #FFF;    
+    color: #36312B;
+    padding: 10px 8px 7px;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: inset 0 1px 5px rgba(0,0,0,0.1);    
+    width: 100%;    
+}
+
+/*#edd-purchase-button, .edd-submit, input[type=submit].edd-submit{*/
+/*  padding: 20px;*/
+/*}*/
+
+#edd_checkout_form_wrap #edd-payment-mode-wrap label {
+    font-size: 20px;
+}
+
+#edd_checkout_form_wrap input[type=radio] {
+    height: 25px;
+    width: 25px;
+}
+
+#edd_checkout_form_wrap input[type=text], #edd_checkout_form_wrap input[type=email], #edd_checkout_form_wrap input[type=password], #edd_checkout_form_wrap input[type=tel], #edd_checkout_form_wrap textarea {
+    padding: 10px;
+}
+
+p#edd_profile_display_name_wrap {
+    display: none;
+}
+
+legend#edd_profile_name_label, legend#edd_profile_password_label {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    background: #ffb800;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;    
+}
+
+fieldset#edd_profile_password_fieldset, fieldset#edd_profile_personal_fieldset {
+    margin-top: 20px;
+}
+
+#edd_user_history {
+    margin-bottom: 40px;
+    font-size: 17px;
+}

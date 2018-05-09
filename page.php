@@ -1,13 +1,13 @@
 <?php 
 /**
- * The template for index.php
+ * The template for page
  * 
  * @since 1.0
  */
 get_header(); 
 ?>
 
-<!-- Index.php -->
+<!-- Page.php -->
 <?php 
 if ( have_posts() ) {
 	while ( have_posts() ) {

@@ -458,7 +458,7 @@ a {
 .pricing {
   width: 20%;
   margin-right: 20px;
-  padding: 20px;
+  padding: 20px 0px;
   background-color: #fff;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 255, .14);
   -webkit-transition: -webkit-transform 1000ms ease;
@@ -475,8 +475,7 @@ a {
 }
 
 .pricing.pricing-middle {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 2px 0px 51px;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
@@ -484,8 +483,11 @@ a {
 }
 
 .price-header {
-  padding-bottom: 5px;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #eee;
+  color: #464646;
   font-weight: 700;
 }
 
@@ -592,12 +594,24 @@ a {
   -webkit-transition: color 1000ms ease;
   transition: color 1000ms ease;
   color: #858585;
-  font-weight: 300;
+  font-weight: 600;
   text-decoration: underline;
 }
 
 .link:hover {
   color: #000;
+}
+
+.div-block-5 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 255, .75);
+  color: #fff;
+}
+
+.heading-5 {
+  margin-top: 0px;
+  margin-bottom: 0em;
 }
 
 @media (max-width: 991px) {

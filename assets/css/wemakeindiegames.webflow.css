@@ -342,6 +342,34 @@ a {
   color: #fff;
 }
 
+.box_white {
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.tab-link {
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 0px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.tab-link.w--current {
+  background-color: rgba(0, 0, 255, .75);
+}
+
 @media (max-width: 991px) {
   .div-block-3 {
     width: 60%;

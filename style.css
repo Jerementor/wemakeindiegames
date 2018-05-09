@@ -9,6 +9,14 @@ Text Domain: jerementor
 Tags: epic blog
 */
 
+/*
+div-block-5 => padding-top:10px padding-bottom:1px
+heading-5 => margin-top:10px no margin bottom
+
+*/
+
+
+
 /*edd login*/
 input#edd_login_submit {
     width: 100%;

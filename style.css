@@ -103,3 +103,7 @@ fieldset#edd_profile_password_fieldset, fieldset#edd_profile_personal_fieldset {
     margin-bottom: 40px;
     font-size: 17px;
 }
+
+fieldset#edd_profile_address_fieldset {
+    display: none;
+}

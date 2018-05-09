@@ -343,9 +343,10 @@ a {
 }
 
 .box_white {
+  display: block;
   width: 50%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 20px;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
@@ -368,6 +369,40 @@ a {
 
 .tab-link.w--current {
   background-color: rgba(0, 0, 255, .75);
+}
+
+.hero-block {
+  display: block;
+  height: 100%;
+  min-height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fafafc;
+  background-image: -webkit-linear-gradient(270deg, rgba(250, 250, 252, .98), rgba(250, 250, 252, .98)), url('../images/glamorous.svg');
+  background-image: linear-gradient(180deg, rgba(250, 250, 252, .98), rgba(250, 250, 252, .98)), url('../images/glamorous.svg');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, 90px;
+  font-size: 1em;
+}
+
+.hero-block-1 {
+  background-image: -webkit-linear-gradient(270deg, rgba(250, 250, 252, .98), rgba(250, 250, 252, .98)), url('../images/glamorous.svg');
+  background-image: linear-gradient(180deg, rgba(250, 250, 252, .98), rgba(250, 250, 252, .98)), url('../images/glamorous.svg');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, 90px;
 }
 
 @media (max-width: 991px) {
@@ -417,5 +452,19 @@ a {
   }
   .div-block-3 {
     width: 100%;
+  }
+  .hero-block {
+    padding-right: 10px;
+    padding-left: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
   }
 }

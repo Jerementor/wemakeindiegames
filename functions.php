@@ -74,33 +74,33 @@ function wemakeindiegames_widget_title($t)
 }
 
 
-function wemakeindiegames_edd_empty_cart_redirect() {
-	$cart 		= function_exists( 'edd_get_cart_contents' ) ? edd_get_cart_contents() : false;
-	$redirect 	= site_url( '/' ); // could be the URL to your shop
-	if ( function_exists( 'edd_is_checkout' ) && edd_is_checkout() && ! $cart ) {
-		wp_redirect( $redirect, 301 ); 
-		exit;
-	}
-}
-add_action( 'template_redirect', 'wemakeindiegames_edd_empty_cart_redirect' );
+// function wemakeindiegames_edd_empty_cart_redirect() {
+// 	$cart 		= function_exists( 'edd_get_cart_contents' ) ? edd_get_cart_contents() : false;
+// 	$redirect 	= site_url( '/' ); // could be the URL to your shop
+// 	if ( function_exists( 'edd_is_checkout' ) && edd_is_checkout() && ! $cart ) {
+// 		wp_redirect( $redirect, 301 ); 
+// 		exit;
+// 	}
+// }
+
+// add_action( 'template_redirect', 'wemakeindiegames_edd_empty_cart_redirect' );
 
 if (!current_user_can('manage_options')){
     add_filter('show_admin_bar', '__return_false');
 }
 
 
+// function wemakeindiegames_filter_excerpt ($post_excerpt) { 
+//   $post_excerpt = '<p class="jer_post_sub">' . $post_excerpt . '</p>';
+//   return $post_excerpt;
+// }  
 
-function wemakeindiegames_filter_excerpt ($post_excerpt) { 
-  $post_excerpt = '<p class="jer_post_sub">' . $post_excerpt . '</p>';
-  return $post_excerpt;
-}  
+// add_filter ('get_the_excerpt','wemakeindiegames_filter_excerpt');
 
-add_filter ('get_the_excerpt','wemakeindiegames_filter_excerpt');
-
-function wemakeindiegames_remove_p_on_pages() {
-       $pages = array(163, "/sales", "/join-community");
-    if ( is_page($pages) ) {
-        remove_filter( 'the_content', 'wpautop' );
-    }
-}
-add_action( 'wp_head', 'wemakeindiegames_remove_p_on_pages' );
+// function wemakeindiegames_remove_p_on_pages() {
+//       $pages = array(163, "/sales", "/join-community");
+//     if ( is_page($pages) ) {
+//         remove_filter( 'the_content', 'wpautop' );
+//     }
+// }
+// add_action( 'wp_head', 'wemakeindiegames_remove_p_on_pages' );
